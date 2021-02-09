@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navMainActivity"
+        android:title="Películas"
+        android:icon="@drawable/ic_movie"/>
+    <item
+        android:id="@+id/navMapFragment"
+        android:title="Ubicación"
+        android:icon="@drawable/ic_map"/>
+    <item
+        android:id="@+id/navUserActivity"
+        android:title="Perfil"
+        android:icon="@drawable/ic_user"/>
+</menu>

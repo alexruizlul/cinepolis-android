@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grap"
+    app:startDestination="@id/navMainActivity">
+
+    <activity
+        android:id="@+id/navMainActivity"
+        android:name="morelia.tecnm.cinepolis.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_mainActivity_to_userActivity"
+            app:destination="@+id/navMapFragment"/>
+    </activity>
+    <fragment
+        android:id="@+id/navMapFragment"
+        android:name="morelia.tecnm.cinepolis.UbicationFragment"
+        android:label="fragment_ubication"
+        tools:layout="@layout/fragment_ubication" >
+        <action
+            android:id="@+id/action_navMapFragment_to_navUserActivity"
+            app:destination="@id/navUserActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/navUserActivity"
+        android:name="morelia.tecnm.cinepolis.HistoryActivity"
+        android:label="activity_history"
+        tools:layout="@layout/activity_history" />
+
+
+</navigation>
